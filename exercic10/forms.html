@@ -10,8 +10,16 @@
         <form action="bla.php" method="post" autocomplete="off">
             <p>FORMULÁRIO</p>
 
-            <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
-            <p><label for="ipass">Senha:</label> <input type="password" name="senha" id="ipass"></p>
+            <p>
+                <label for="inome">Nome:</label> 
+                <input type="text" name="nome" id="inome" autocomplete="username" minlength="4" maxlength="50" required>
+            </p>
+
+            <p>
+                <label for="ipass">Senha:</label>
+                <input type="password" name="senha" id="ipass" autocomplete="new-password" minlength="8" maxlength="15" required>
+            </p>
+
             <input type="submit" value="Enviar">
         </form>
     </main>
