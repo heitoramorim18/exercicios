@@ -7,20 +7,36 @@
 </head>
 <body>
     <main>
-        <form action="bla.php" method="post" autocomplete="off">
+        <form action="bla.php" method="post">
             <p>FORMULÁRIO</p>
 
             <p>
                 <label for="inome">Nome:</label> 
-                <input type="text" name="nome" id="inome" autocomplete="username" minlength="4" maxlength="50" required>
+                <input type="text" name="nome" id="inome" autocomplete="username" minlength="4" maxlength="50" placeholder="Nome" required>
             </p>
 
             <p>
                 <label for="ipass">Senha:</label>
-                <input type="password" name="senha" id="ipass" autocomplete="new-password" minlength="8" maxlength="15" required>
+                <input type="password" name="senha" id="ipass" autocomplete="new-password" minlength="8" maxlength="15" placeholder="Senha" required>
+            </p>
+
+            <p>
+                <label for="inota">Nota:</label>
+                <input type="number" min="0" max="10" step="0.5" name="nota" id="inota" placeholder="Nota" required>
+            </p>
+
+            <p>
+                <label for="imes">Mês:</label>
+                <input type="month" name="mes" id="imes" value="2026-04">
+            </p>
+
+            <p>
+                <label for="ihora">Horário:</label>
+                <input type="time" name="horario" id="ihora">
             </p>
 
             <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar formulário">
         </form>
     </main>
 </body>
