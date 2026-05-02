@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIOS 2</title>
+
+    <style>
+        form {min-width: 300px; max-width: 600px; margin: auto;}
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>ESPORTES FAVORITOS</legend>
+            <input type="checkbox" name="iesfut" id="futebol">
+            <label for="futebol">Futebol</label> <br>
+
+            <input type="checkbox" name="iesbas" id="basquete">
+            <label for="basquete">Basquete</label> <br>
+
+            <input type="checkbox" name="iesvol" id="volei"> 
+            <label for="volei">Vôlei</label> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>SEXO</legend>
+            <input type="radio" name="rad1" id="irad1" required> 
+            <label for="irad1">Feminino</label> <br>
+
+            <input type="radio" name="rad1" id="irad2" required checked> 
+            <label for="irad2">Masculino</label> <br>
+
+            <input type="radio" name="rad1" id="irad3" required> 
+            <label for="irad3">Outro</label> <br> 
+        </fieldset>
+
+        <fieldset>
+            <legend>OUTROS INPUTS</legend>
+
+            <label for="">Escolher cor:</label>
+            <input type="color" name="cor" id="icor" value="#ff00ff"> <br>
+
+            <label for="">Barra de escolher:</label>
+            <input type="range" name="" id="" min="1" max="3" value="3">
+        </fieldset>
+
+        <input type="submit">
+    </form>
+</body>
+</html>
