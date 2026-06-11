@@ -7,6 +7,9 @@
 
     <style>
         form {min-width: 300px; max-width: 600px; margin: auto;}
+        body {background-color: rgb(250, 134, 134); font-family: Arial, Helvetica, sans-serif;}
+
+        fieldset {background-color: rgb(138, 64, 64); color: white; font-weight: bold; box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.733);}
     </style>
 </head>
 <body>
@@ -42,7 +45,43 @@
             <input type="color" name="cor" id="icor" value="#ff00ff"> <br>
 
             <label for="">Barra de escolher:</label>
-            <input type="range" name="" id="" min="1" max="3" value="3">
+            <input type="range" name="rang" id="irang" min="1" max="4" value="1"> <br>
+
+            <label for="isel">ESTADOS</label>
+            <select name="sel" id="isel">  
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="PE">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="PE">Pernambuco</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="BH">Bahia</option> 
+                </optgroup>
+            </select> <br>
+
+            <label for="ilist">DATALIST</label>
+            <input type="text" name="lis" id="ilist" list="idata">
+
+            <datalist id="idata">
+                <option value="DEV">Desenvolvedor</option>
+                <option value="COZ">Cozinheiro</option>
+                <option value="CONT">Contabilista</option>
+            </datalist> <br> <br>
+
+            <label for="inum1">Número 1</label>
+            <input type="number" name="num1" id="inum1" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+
+            <label for="inum2">Número 2</label>
+            <input type="number" name="num2" id="inum2" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>  
+
+            <textarea name="text" id="itext" cols="74" rows="8" max="30"></textarea>
+            <output id="said"></output>
         </fieldset>
 
         <input type="submit">
