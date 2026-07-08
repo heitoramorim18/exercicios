@@ -1,0 +1,7 @@
+/* == VERSÕES PARA DISPOSITIVOS DIFERENTES ==*/
+
+@media screen and (orientation: portrait) {}
+
+@media screen and (orientation: landscape) {}
+
+@media print {}
