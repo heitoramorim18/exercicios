@@ -5,4 +5,5 @@
 body {background-image: url(../img/cev-portrait.jpg);
 background-repeat: no-repeat;
 background-size: contain;
-background-position: bottom;}
+background-position: bottom;
+font-size: 12px;}
