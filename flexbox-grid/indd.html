@@ -13,24 +13,28 @@
             background-color: aqua;
             height: 400px;}
 
-        #item {flex: auto;
+        .item {flex: auto;
             text-align: center;
             background-color: blue;
             color: white;
             font-weight: bold;
             padding: 5px;
             border: 1px solid white;}
+
+        #i1 {align-self: flex-end;}
+        #i2 {align-self: center;}
+        #i3 {align-content: center;}
     </style>
 </head>
 
 <body>
     <div id="conteiner">
-        <div id="item">A BLABLA</div>
-        <div id="item">B BLABLA</div>
-        <div id="item">C BLABLA</div>
-        <div id="item">D BLABLA</div>
-        <div id="item">E BLABLA</div>
-        <div id="item">F BLABLA</div>
+        <div class="item" id="i2">A BLABLA</div>
+        <div class="item" id="i3">B BLABLA</div>
+        <div class="item" id="i1">C BLABLA</div>
+        <div class="item">D BLABLA</div>
+        <div class="item">E BLABLA</div>
+        <div class="item">F BLABLA</div>
     </div>
 </body>
 </html>
