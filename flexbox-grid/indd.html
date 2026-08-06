@@ -11,7 +11,8 @@
         #conteiner {display: flex;
             flex-flow: row wrap;
             background-color: aqua;
-            height: 400px;}
+            height: 250px;
+            margin-bottom: 10px;}
 
         .item {flex: auto;
             text-align: center;
@@ -24,6 +25,25 @@
         #i1 {align-self: flex-end;}
         #i2 {align-self: center;}
         #i3 {align-content: center;}
+
+
+        #cont2 {display: flex;
+        flex-flow: row wrap;
+        background-color: aquamarine;
+        height: 200px;
+        align-items: center;}
+
+        .itemm {flex-basis: 140px;
+            flex-grow: 0;
+            background-color: blueviolet;
+            color: white;
+            font-weight: bold;
+            border: 1px solid white;
+            font-size: 20px;
+            padding: 5px;}
+
+        #um {flex-grow: 1;}
+        #dois {flex-grow: 3;}
     </style>
 </head>
 
@@ -35,6 +55,15 @@
         <div class="item">D BLABLA</div>
         <div class="item">E BLABLA</div>
         <div class="item">F BLABLA</div>
+    </div>
+
+    <div id="cont2">
+        <div class="itemm" id="um">QUALQUER 1</div>
+        <div class="itemm" id="dois">QUALQUER 2</div>
+        <div class="itemm" id="tres">QUALQUER 3</div>
+        <div class="itemm">QUALQUER 4</div>
+        <div class="itemm">QUALQUER 5</div>
+        <div class="itemm">QUALQUER 6</div>
     </div>
 </body>
 </html>
