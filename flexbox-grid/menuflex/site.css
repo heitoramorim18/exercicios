@@ -1,0 +1,35 @@
+/* -- MOBILE FIRST --*/
+
+*{padding: 0; margin: 0; font-family: Arial, Helvetica, sans-serif;}
+
+body {height: 100%; width: 100; background-color: white;}
+
+header {padding: 10px 0px;}
+h1 {font-size: 28px;}
+
+main {margin: auto;}
+
+#conteiner-principal {display: flex;
+flex-flow: column wrap-reverse;
+background-color: rgb(196, 196, 196);
+padding: 10px;}
+
+#iframe-conteiner {margin: auto;}
+
+#secao1 {order: 2; border: 1px dashed black;}
+
+#img1 {width: 200px; 
+align-self: center;
+order: 1;}
+
+#secao2 {order: 4; border: 1px dashed black;}
+
+iframe {order: 3; 
+align-self: center;}
+
+h2 {font-size: 20px; margin-top: 15px; margin-left: 15px;}
+
+p {margin: 10px 0px; text-indent: 20px; text-align: justify;
+flex-basis: 50px;
+line-height: 30px;
+padding: 10px;}
