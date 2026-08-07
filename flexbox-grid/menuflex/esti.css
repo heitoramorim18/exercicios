@@ -1,0 +1,55 @@
+/* -- MOBILE FIRST -- */
+* {margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif;}
+
+body {height: 100vh; width: 100vw;
+background-color: rgb(160, 160, 160);}
+
+header {display: flex;
+flex-flow: column;
+justify-content: space-between;
+align-items: center;
+background-color: rgb(97, 97, 97);
+padding: 40px 10px 10px 10px;}
+
+h1 {color: white; text-shadow: 1px 1px 2px black; margin-bottom: 20px;}
+
+nav {display: flex;
+flex-flow: column;
+width: 95%;}
+
+a {font-weight: bold;
+text-decoration: none;
+color: white;
+background-color: black;
+margin-bottom: 5px;
+padding: 5px;
+border-radius: 3px;
+align-content: center;
+text-align: center;}
+
+a:hover {background-color: rgb(224, 224, 224); color: black; transition: 0.2s;}
+
+main {background-color: white;
+width: 95%; 
+margin: auto;
+margin-top: 5px;
+border-radius: 3px;
+box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.514);}
+
+
+
+/* -- CELULARES GRANDES EM DIANTE -- */
+@media screen and (min-width: 600px) {
+    header {flex-flow: row wrap;
+    padding: 20px 15px 5px 15px;}
+
+    header h1 {flex-basis: 400px;}
+
+    nav {flex-flow: row wrap; width: 400px; 
+    justify-content: space-evenly;
+    margin-top: -10px;
+    margin-right: 10px;
+    height: 50px;}
+
+    a {padding: 10px; margin-bottom: 0px;}
+}
