@@ -15,13 +15,13 @@ flex-flow: column wrap-reverse;
 background-color: rgb(196, 196, 196);
 padding: 10px 10px 0px 10px;}
 
-#secao1 {order: 2; /*border: 1px dashed black; */}
+#secao1 {order: 2; border: 1px dashed black; }
 
 #img1 {width: 200px; 
 align-self: center;
 order: 1;}
 
-#secao2 {order: 4; /*border: 1px dashed black; */}
+#secao2 {order: 4; border: 1px dashed black;}
 
 iframe {order: 3; 
 width: 100%;
@@ -65,14 +65,20 @@ padding: 10px;}
     #conteiner-secundario {display: flex; 
     width: 100%;}
 
-    #secao1 {flex-basis: 700px;}
+    #secao1 {flex-basis: 600px;}
 
     #img1 {width: 250px;
-    padding-left: 15%;
-    padding-right: 15%;}
+    padding-left: 6%;
+    padding-right: 2%;}
 
     iframe {display: block;
     margin: auto;
     height: 350px;
     width: 800px;}
+}
+
+@media screen and (min-width: 1070px) {
+    
+
+    #img1 {padding-left: 15%;}
 }
