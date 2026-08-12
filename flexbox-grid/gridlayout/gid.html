@@ -23,13 +23,18 @@
         justify-items: stretch;}
 
         .item {border: 1px solid white; padding: 5px; text-align: center;}
+
+        #itemA {grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: -2;}
     </style>
 </head>
 
 <body>
     <main>
         <div id="container">
-            <div class="item">A</div>
+            <div class="item" id="itemA">A</div>
             <div class="item">B</div>
             <div class="item">C</div>
             <div class="item">D</div>
