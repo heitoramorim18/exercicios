@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO</title>
+    <style>
+        body {margin: 0; font-family: Arial, Helvetica, sans-serif;}
+
+        #container-principal {display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        align-content: center;}
+
+        #container-principal, header, div, main, footer {
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        align-content: center;}
+
+        header {background-color: blue;
+        grid-area: 1/1/3/5;}
+
+        #menu {grid-area: 3/1/4/5;
+        background-color: brown;}
+
+        main {background-color: purple;
+        grid-area: 4/1/15/4;}
+
+        #sec {background-color: chocolate;
+        grid-area: 4/4/15/5;}
+
+        footer {background-color: black;
+        grid-area: 15/1/15/-1;}
+    </style>
+</head>
+
+<body>
+    <div id="container-principal">
+        <header>topo</header>
+
+        <div id="menu">menu</div>
+
+        <main>principal</main>
+
+        <div id="sec">secundário</div>
+
+        <footer>rodapé</footer>
+    </div>
+</body>
+</html>
